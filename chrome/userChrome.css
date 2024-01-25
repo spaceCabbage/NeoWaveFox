@@ -18,6 +18,9 @@
 #navigator-toolbox {
   border-bottom: none !important;
 }
+findbar {
+  border-top: none !important;
+}
 
 /* ---------------------------------------- Everything below is stolen from  Wavefox ---------------------------------------- */
 
@@ -378,13 +381,13 @@
 
     @media (-moz-bool-pref: 'userChrome.Tabs.Pinned.Width.LowOffset.Enabled') {
       :root {
-        --pinned-tabs-width-offset: 3px;
+        --pinned-tabs-width-offset: 4px;
       }
     }
 
     @media (-moz-bool-pref: 'userChrome.Tabs.Pinned.Width.HighOffset.Enabled') {
       :root {
-        --pinned-tabs-width-offset: 5px;
+        --pinned-tabs-width-offset: 6px;
       }
     }
 
@@ -543,7 +546,7 @@
         .private-browsing-indicator,
         #private-browsing-indicator-with-label
       ) {
-      margin-top: var(--drag-space, 0px) !important;
+      margin-top: var(--drag-space, 6px) !important;
     }
 
     /* ---------- Shadow DOM ---------- */
